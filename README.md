@@ -22,6 +22,7 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
 ## Contact
 
 Author: Pedro Mendes da Silva Júnior 
+
 GitHub: [pedrojuniormendes](https://github.com/pedrojuniormendes)
 
 Author: Flávio Geraldo Coelho Rocha  
