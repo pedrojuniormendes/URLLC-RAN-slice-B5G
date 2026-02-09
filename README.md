@@ -4,7 +4,7 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
 
 ## Files
 
-- **URLLC** — Main script simulate the conditions exposed on article.
+- **URLLC.py** — Simulate the conditions exposed on article.
 
 
 ## How to Run
@@ -23,6 +23,7 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
 
 Author: Pedro Mendes da Silva Júnior 
 GitHub: [pedrojuniormendes](https://github.com/pedrojuniormendes)
+
 Author: Flávio Geraldo Coelho Rocha  
 GitHub: [flaviogeraldo](https://github.com/flaviogeraldo)
 
