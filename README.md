@@ -1,4 +1,4 @@
-# URRLC-RAN-slice-B5G
+# URLLC-RAN-slice-B5G
 
 This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
 
