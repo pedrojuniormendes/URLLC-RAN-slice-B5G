@@ -20,38 +20,47 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
    Was tested on Spyder.
    ```
 ## Algoritmo 1
-```latex
-\begin{algorithm}[htbp]
-\caption{Orquestração de recursos para fatia URLLC usando \ac{SNC}}
-\label{alg:snc_orchestration}
-\DontPrintSemicolon
+## 📡 Algoritmo — Orquestração de Recursos para URLLC (SNC)
 
-\KwIn{
-Qtde de células $|\mathcal{I}|$; Qtde de fatias $|\mathcal{M}|$; janela temporal $\Delta T$; 
-parâmetros do \ac{SNC} $t_{\mathrm{slot}},\theta,\delta$; requisitos por fatia $(W_m,\epsilon'_m)$; 
-PMF de capacidade $\{(c_q,p_q)\}_{q\in\mathcal{Q}_{i}^{m}}$; 
-demanda $\zeta_{\mathrm{user}}$.
-}
-\KwOut{Distribuição de recursos (RBs tempo$\times$frequência).}
+**Entrada:**
+- $|\mathcal{I}|$: número de células  
+- $|\mathcal{M}|$: número de fatias  
+- $\Delta T$: janela temporal  
+- $(t_{slot}, \theta, \delta)$: parâmetros SNC  
+- $(W_m, \epsilon'_m)$: requisitos por fatia  
+- $\{(c_q, p_q)\}$: PMF de capacidade  
+- $\zeta_{user}$: demanda  
 
-\While{rede ativa}{
-  \ForEach{slice $m\in\mathcal{M}$}{
-    \ForEach{célula $i\in\mathcal{I}$}{
-      Atualizar estatísticas do canal\;
-      Calcular $W_{i,m}$\;
-      Estimar $N^{\max}_{i,m}$\;
-      Medir $N^{\mathrm{cur}}_{i,m}$\;
+**Saída:**
+- Alocação de recursos (RBs tempo × frequência)
 
-      \eIf{$N^{\mathrm{cur}}_{i,m} \le N^{\max}_{i,m}$}{
-        Manter recursos\;
-      }{
-        Aumentar recursos\;
-      }
-    }
-  }
-  Esperar $\Delta T$\;
-}
-\end{algorithm}
+---
+
+```text
+WHILE rede ativa DO
+    FOR EACH slice m ∈ M DO
+        FOR EACH célula i ∈ I DO
+
+            Atualizar estatísticas do canal
+            Construir Q_i^m e PMF {(c_q, p_q)}
+
+            Calcular W_i,m (SNC)
+            Estimar N_max_i,m
+
+            Medir N_cur_i,m
+
+            IF N_cur_i,m ≤ N_max_i,m THEN
+                Manter recursos
+            ELSE
+                Aumentar RBs
+            END IF
+
+        END FOR
+    END FOR
+
+    Esperar ΔT
+END WHILE
+
 ## Contact
 
 Author: Pedro Mendes da Silva Júnior 
