@@ -1,6 +1,6 @@
-# URLLC-RAN-slice-5G
+# URLLC-RAN-slice-B5G
 
-This repository contains PYTHON scripts for simulating URRLC-RAN-slice-5G.
+This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
 
 ## Files
 
@@ -11,7 +11,7 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-5G.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/pedrojuniormendes/URLLC-RAN-slice-5G.git
+   git clone https://github.com/pedrojuniormendes/URLLC-RAN-slice-B5G.git
    cd URLLC-RAN-slice-B5G
    ```
 
