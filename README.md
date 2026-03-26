@@ -19,8 +19,16 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
    ```
    Was tested on Spyder.
    ```
+## Contact
+
+Author: Pedro Mendes da Silva Júnior 
+GitHub: [pedrojuniormendes](https://github.com/pedrojuniormendes)
+
+Author: Flávio Geraldo Coelho Rocha  GitHub: [flaviogeraldo](https://github.com/flaviogeraldo)
+   
 ## Algoritmo 1
-## 📡 Algoritmo — Orquestração de Recursos para URLLC (SNC)
+
+ Algoritmo — Orquestração de Recursos para URLLC (SNC)
 
 **Entrada:**
 - $|\mathcal{I}|$: número de células  
@@ -61,12 +69,6 @@ WHILE rede ativa DO
     Esperar ΔT
 END WHILE
 
-## Contact
-
-Author: Pedro Mendes da Silva Júnior 
-GitHub: [pedrojuniormendes](https://github.com/pedrojuniormendes)
-
-Author: Flávio Geraldo Coelho Rocha  GitHub: [flaviogeraldo](https://github.com/flaviogeraldo)
 
 
 
