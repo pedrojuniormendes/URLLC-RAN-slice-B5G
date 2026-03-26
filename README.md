@@ -6,7 +6,8 @@ This repository contains PYTHON scripts for simulating URRLC-RAN-slice-B5G.
 
 - **URLLC.py** — Simulate the conditions exposed in the article.
 - **algorithm.py** — Simulate the algorithm exposed in the article.
-
+- **Algoritmo 1.pdf** — Archive showing the Algorithm 1 used in the article.
+  
 ## How to Run
 
 1. Clone this repository:
